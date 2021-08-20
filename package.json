@@ -1,0 +1,23 @@
+{
+  "name": "suhu-konversi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validate.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teguhatma/temp-convertion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teguhatma/temp-convertion/issues"
+  },
+  "homepage": "https://github.com/teguhatma/temp-convertion#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

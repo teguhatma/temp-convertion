@@ -77,7 +77,18 @@ function convert() {
 }
 
 // Color Changes
-btn.addEventListener("click", function (event) {
-    document.body.style.backgroundColor = document.getElementById("bg-color").value;
-    event.preventDefault();
-})
+if(btn){
+    btn.addEventListener("click", function (event) {
+        document.body.style.backgroundColor = document.getElementById("bg-color").value;
+        event.preventDefault();
+    })
+}
+
+module.exports = {
+    CelToFah,
+    CelToRea,
+    FahToCel,
+    FahToRea,
+    ReaToCel,
+    ReaToFah
+}
