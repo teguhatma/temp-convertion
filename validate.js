@@ -2,6 +2,7 @@ let tempFrom = document.getElementById("tempFrom");
 let tempTo = document.getElementById("tempTo");
 let tempResult = document.getElementById("tempResult");
 let tempInput = document.getElementById("tempInput");
+let btn = document.getElementById("btn");
 
 function onChange() {
     tempResult.value = "";
@@ -42,41 +43,41 @@ function convert() {
     let inputValueInt = parseInt(tempInput.value);
 
     // Celcius Logic
-    if(tempFrom.value === "celcius" && tempTo.value === "celcius"){
+    if (tempFrom.value === "celcius" && tempTo.value === "celcius") {
         tempResult.value = tempInput.value;
-    }
-    else if(tempFrom.value === "celcius" && tempTo.value === "fahrenheit"){
+    } else if (tempFrom.value === "celcius" && tempTo.value === "fahrenheit") {
         let result = CelToFah(inputValueInt);
         tempResult.value = result;
-    }
-    else if(tempFrom.value === "celcius" && tempTo.value === "reamur"){
+    } else if (tempFrom.value === "celcius" && tempTo.value === "reamur") {
         let result = CelToRea(inputValueInt);
         tempResult.value = result;
     }
 
     // Fahrenheit Logic
-    else if(tempFrom.value === "fahrenheit" && tempTo.value === "fahrenheit"){
+    else if (tempFrom.value === "fahrenheit" && tempTo.value === "fahrenheit") {
         tempResult.value = tempInput.value;
-    }
-    else if(tempFrom.value === "fahrenheit" && tempTo.value === "celcius"){
+    } else if (tempFrom.value === "fahrenheit" && tempTo.value === "celcius") {
         let result = FahToCel(inputValueInt)
         tempResult.value = result;
-    }
-    else if(tempFrom.value === "fahrenheit" && tempTo.value === "reamur"){
+    } else if (tempFrom.value === "fahrenheit" && tempTo.value === "reamur") {
         let result = FahToRea(inputValueInt)
         tempResult.value = result;
     }
 
     // Reamur Logic
-    else if(tempFrom.value === "reamur" && tempTo.value === "reamur"){
+    else if (tempFrom.value === "reamur" && tempTo.value === "reamur") {
         tempResult.value = tempInput.value;
-    }
-    else if(tempFrom.value === "reamur" && tempTo.value === "fahrenheit"){
+    } else if (tempFrom.value === "reamur" && tempTo.value === "fahrenheit") {
         let result = ReaToFah(inputValueInt)
         tempResult.value = result;
-    }
-    else if(tempFrom.value === "reamur" && tempTo.value === "celcius"){
+    } else if (tempFrom.value === "reamur" && tempTo.value === "celcius") {
         let result = ReaToCel(inputValueInt)
         tempResult.value = result;
     }
 }
+
+// Color Changes
+btn.addEventListener("click", function (event) {
+    document.body.style.backgroundColor = document.getElementById("bg-color").value;
+    event.preventDefault();
+})
