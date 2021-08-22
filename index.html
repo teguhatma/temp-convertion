@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <input type="text" name="tempInput" id="tempInput" onkeyup="convert()">
+    <div class="container">
+        <h2>Konversi Suhu</h2>
+        <input type="text" name="tempInput" id="tempInput" onkeyup="convert()" placeholder="From">
+    
+        <select name="tempFrom" id="tempFrom" onchange="onChange()">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="reamur">Reamur</option>
+        </select>
+    
+        <select name="tempTo" id="tempTo" onchange="onChange()">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="reamur">Reamur</option>
+        </select>
+    
+        <input type="text" name="tempResult" id="tempResult" placeholder="Result" readonly>
+        <form>
+            <h4>Change Background Color</h4>
+            <input type="text" name="bg-color" placeholder="#ea971a or orange" id="bg-color">
+            <button id="btn" type="submit">Change</button>
+        </form>
+    </div>
+    
 
-    <select name="tempFrom" id="tempFrom" onchange="onChange()">
-        <option value="celcius">Celcius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-        <option value="reamur">Reamur</option>
-    </select>
-
-    <select name="tempTo" id="tempTo" onchange="onChange()">
-        <option value="celcius">Celcius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-        <option value="reamur">Reamur</option>
-    </select>
-
-    <input type="text" name="tempResult" id="tempResult" readonly>
-
-    <form>
-        <input type="text" name="bg-color" id="bg-color">
-        <button id="btn" type="submit">Change</button>
-    </form>
 
     <script src="validate.js"></script>
 </body>

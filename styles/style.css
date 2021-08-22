@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+div.container h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+form #bg-color {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+form #btn {
+  background: #009688;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+#tempTo,
+#tempFrom,
+#tempResult,
+#tempInput,
+#bg-color {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+}
+
+#tempTo:focus,
+#tempFrom:focus,
+#tempInput:focus,
+#tempResult:focus,
+#bg-color:focus {
+  border: 1px solid #cecece;
+}
+/*# sourceMappingURL=style.css.map */
